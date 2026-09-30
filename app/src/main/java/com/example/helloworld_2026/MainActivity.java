@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         TextView tekstas = findViewById(R.id.tekstas);
         Button mygtukas = findViewById(R.id.mygtukas);
         Button spalvosMygtukas = findViewById(R.id.spalvosMygtukas);
-        tekstas.setText("Kodo pašalinimas");
 
         mygtukas.setOnClickListener(v -> {
             tekstas.setText(R.string.labas);
