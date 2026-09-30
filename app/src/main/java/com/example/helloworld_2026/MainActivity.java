@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import android.widget.Button;
 import android.widget.TextView;
+import android.graphics.Color;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,9 +23,14 @@ public class MainActivity extends AppCompatActivity {
 
         TextView tekstas = findViewById(R.id.tekstas);
         Button mygtukas = findViewById(R.id.mygtukas);
+        Button spalvosMygtukas = findViewById(R.id.spalvosMygtukas);
 
         mygtukas.setOnClickListener(v -> {
             tekstas.setText(R.string.labas);
+        });
+
+        spalvosMygtukas.setOnClickListener(v -> {
+            tekstas.setTextColor(Color.GREEN);
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
